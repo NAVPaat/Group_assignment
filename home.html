@@ -1,0 +1,198 @@
+<html>
+</head>
+<body>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+  <nav>
+    <div class="logo"><a class="active" href="index.html"><img src="assets/picture/logo.jpg" width="130px"></a></div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="model_kits.html">Model Kits</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="recommendation.html">Recommendation</a></li>  
+      <li><a href="login.html">Login</a></li>
+     
+    </ul>
+  </nav>
+
+
+<!----- VIDEO ----->
+
+<section class="About" id="About">
+
+
+    <div class="row">
+
+      <div class="video-container">
+        <video src="assets/video/vid1.mp4" loop autoplay muted></video>
+      </div>
+
+<br>
+<br>
+
+  <div class="box">
+<center>
+<b><h2 style="color:#fcfcfc;">NEW ARRIVAL</h2></b>
+</center>  
+  </div>
+
+
+<br>
+<br>
+
+
+<!----- SLIDESHOW ----->
+
+<div class="slideshow-container">
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="assets/picture/pic1.jpg" style="width:60%">
+  <b><div class="text">Barbatos Lupus</b>
+  <b><div class="text">RM 45.20</div></b>
+ </center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="assets/picture/pic2.jpg" style="width:60%">
+ <b><div class="text">barbatos Lupus Rex</b> 
+  <b><div class="text">RM 48.90</div></b>
+</center>
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="assets/picture/pic3.jpg" style="width:60%">
+ <b><div class="text">Barbatos</b>
+  <b><div class="text">RM 50.90</div></b>
+</center>
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<!----- MARQUEE ----->
+
+<hr>
+<marquee width="60%" direction="right" height="100px">
+<img src="assets/picture/gif1.gif"  style="width:120	px;height:120px;"></a> 
+<img src="assets/picture/gif1.gif"  style="width:120	px;height:120px;"></a>
+</marquee>
+<hr>
+
+<br>
+<br>
+
+
+<!----- PICTURE ----->
+
+<center>
+
+  <div class="image-container">
+    <img src="assets/picture/pic4.jpg" alt="Image 1" width="300" height="250">
+<br>
+<h1> <font size="2px">Kimaris Tropper</font> </h1>
+<br>
+<p><span class="small">RM 60.00</span>→ <span class="large">RM 54.40</span></p></div>
+
+
+  <div class="image-container">
+    <img src="assets/picture/pic5.jpg" alt="Image 1" width="300" height="250">
+<br>
+<h1> <font size="2px">Grimgerder</font> </h1>
+<br>
+<p><span class="small">RM 58.90</span>→ <span class="large">RM 52.00</span></p></div>
+
+
+  <div class="image-container">
+    <img src="assets/picture/pic6.jpg" alt="Image 1" width="300" height="250">
+<br>
+<h1> <font size="2px">Vidar</font> </h1>
+<br>
+<p><span class="small">RM 54.00</span>→ <span class="large">RM 47.40</span></p></div>
+
+
+  <div class="image-container">
+    <img src="assets/picture/pic7.jpg" alt="Image 1" width="300" height="250">
+<br>
+<h1> <font size="2px">Astaroth</font> </h1>
+<br>
+<p><span class="small">RM 55.80</span>→ <span class="large">RM 49.90</span> </p></div>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!----- FOOTER ----->
+
+<footer>
+<p>Copyright 2023 © Bantai.my@gmail.com 
+<br>
+<p> Get connected with us on social networks: </p>
+<a target="_blank" href="https://instagram.com/bantai.my?igshid=MzRlODBiNWFlZA=="> <img src="assets/picture/IG.png" alt="IG" width="30px" height="30px" > </a> 
+
+<a target="_blank" href="http://wa.link/r2tmkc"> <img src="assets/picture/W.png" alt="IG" width="30px" height="30px" > </a>
+
+</footer>
+
+<!----- END FOOTER ----->
+
+
+
+</body>
+</html>
